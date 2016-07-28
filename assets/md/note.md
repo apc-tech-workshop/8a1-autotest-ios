@@ -301,22 +301,9 @@ class ViewController: UIViewController
 
 ---
 
-# マーカー設定可能オブジェクト
+accessibilityIdentifierを実装するクラスたち
 
-```
- NSObject
- └── UIResponder
-     ├── UIApplication
-*    ├── UIView ----> UIAccessibilityIdentification
-*    │   ├── UIControl
-*    │   │   ├── UIButton
-*    │   │   └── UITextField
-*    │   ├── UILabel
-*    │   └── UITableViewCell
-     └── UIViewController
-         ├── UIAlertController
-         └── UITableViewController
-```
+![:style ](UIKit.png)
 
 ---
 
@@ -327,7 +314,7 @@ import XCTest
 @testable import TaskList
 
 class TaskListUITests: XCTestCase　{
-  let app = XCUIApplication() // = XCUIElementTypeQueryProvider
+  let app = XCUIApplication()
   // setUp(){..}
   // tearDown(){..}
   func test_foobar()　{
@@ -346,8 +333,11 @@ class TaskListUITests: XCTestCase　{
 }
 ```
 
-# テストオブジェクト
+---
 
+XCTestのクラス構成
+
+![:style height:150%](XCTest.png)
 
 ---
 
