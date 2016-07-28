@@ -1,10 +1,10 @@
 @startuml
 
 interface XCUIElementTypeQueryProvider {
-  +alerts(): XCUIElement
-  +buttons(): XCUIElement
-  +cells(): XCUIElement
-  +menuBarItems(): XCUIElement
+  +alerts: XCUIElement
+  +buttons: XCUIElement
+  +cells: XCUIElement
+  +menuBarItems: XCUIElement
 }
 class XCUIElementQuery {
   +subscript(key): XCUIElement
