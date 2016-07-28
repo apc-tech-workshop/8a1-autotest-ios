@@ -1,0 +1,23 @@
+@startuml
+
+interface XCUIElementTypeQueryProvider {
+  +alerts(): XCUIElement
+  +buttons(): XCUIElement
+  +cells(): XCUIElement
+  +menuBarItems(): XCUIElement
+}
+class XCUIElementQuery {
+  +subscript(key): XCUIElement
+}
+class XCUIElement {
+  +typeText(String)
+  +tap()
+}
+NSObject <|-- XCUIElement
+NSObject <|-- XCUIElementQuery
+XCUIElementTypeQueryProvider <|.. XCUIElement
+XCUIElementTypeQueryProvider <|.. XCUIElementQuery
+
+XCUIElement <|-- XCUIApplication
+XCUIElementQuery <.. XCUIApplication
+@enduml
