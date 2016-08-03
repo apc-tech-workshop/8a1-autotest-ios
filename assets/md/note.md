@@ -1,7 +1,7 @@
 class:middle, center, inverse
 # iOSでの自動テスト
 
-APCommunications 伊藤将巳
+APCommunications
 
 ---
 
