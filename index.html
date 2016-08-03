@@ -1,0 +1,23 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Presentation</title>
+        <link rel="stylesheet" type="text/css" href="/assets/style/base.css">
+    </head>
+
+    <body>
+        <script src="/assets/script/remark-latest.min.js"></script>
+        <script type="text/javascript">
+        remark.macros.style = function (s) {
+          var url = this;
+          return '<img src="/assets/img/' + url + '" style="' + s + '" />';
+        };
+        var slideshow = remark.create({
+            sourceUrl: "/assets/md/note.md",
+            highlightLines: true
+        });
+        </script>
+    </body>
+
+    </html>

@@ -1,0 +1,19 @@
+@startuml
+
+UIResponder <|-- UIApplication
+UIResponder <|-- UIView
+UIResponder <|-- UIViewController
+interface UIAccessibilityIdentification {
+  +accessibilityIdentifier
+}
+UIAccessibilityIdentification <|.. UIView
+UIView <|-- UILabel
+UIView <|-- UIControl
+UIView <|-- UITableViewCell
+UIControl <|-- UIButton
+UIControl <|-- UITextField
+UIViewController <|-- UIAlertController
+UIViewController <|-- UITableViewController
+
+@enduml
+
